@@ -1,0 +1,20 @@
+{
+  "name": "interware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "bip39": "^3.1.0",
+    "bitcoinjs-lib": "^5.2.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "monero": "^1.0.6",
+    "nodemon": "^3.0.3"
+  }
+}

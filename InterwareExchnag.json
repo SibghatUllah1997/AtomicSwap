@@ -1,0 +1,83 @@
+{
+   "info": {
+       "_postman_id": "ec130f62-ee62-4fd0-a133-038b731409d4",
+       "name": "Interware API",
+       "description": "Collection of APIs for Interware - Cryptocurrency Swapping API",
+       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+   },
+   "item": [
+       {
+           "name": "Get Quotation for Cryptocurrency",
+           "request": {
+               "method": "GET",
+               "header": [],
+               "url": {
+                   "raw": "{{baseUrl}}/getQuotation",
+                   "protocol": "{{baseUrl}}",
+                   "host": [
+                       "{{baseUrl}}"
+                   ],
+                   "path": [
+                       "getQuotation"
+                   ]
+               }
+           },
+           "response": []
+       },
+       {
+           "name": "Swap BTC to XMR",
+           "request": {
+               "method": "POST",
+               "header": [
+                   {
+                       "key": "Content-Type",
+                       "value": "application/json"
+                   }
+               ],
+               "body": {
+                   "mode": "raw",
+                   "raw": "{\n    \"amount\": 0.1,\n    \"fromCurrency\": \"BTC\",\n    \"toCurrency\": \"XMR\",\n    \"recipientAddress\": \"XMR_RECEIVER_ADDRESS\"\n}"
+               },
+               "url": {
+                   "raw": "{{baseUrl}}/swap",
+                   "protocol": "{{baseUrl}}",
+                   "host": [
+                       "{{baseUrl}}"
+                   ],
+                   "path": [
+                       "swap"
+                   ]
+               }
+           },
+           "response": []
+       },
+       {
+           "name": "Swap XMR to BTC",
+           "request": {
+               "method": "POST",
+               "header": [
+                   {
+                       "key": "Content-Type",
+                       "value": "application/json"
+                   }
+               ],
+               "body": {
+                   "mode": "raw",
+                   "raw": "{\n    \"amount\": 10,\n    \"fromCurrency\": \"XMR\",\n    \"toCurrency\": \"BTC\",\n    \"recipientAddress\": \"BTC_RECEIVER_ADDRESS\"\n}"
+               },
+               "url": {
+                   "raw": "{{baseUrl}}/swap",
+                   "protocol": "{{baseUrl}}",
+                   "host": [
+                       "{{baseUrl}}"
+                   ],
+                   "path": [
+                       "swap"
+                   ]
+               }
+           },
+           "response": []
+       }
+   ],
+   "protocolProfileBehavior": {}
+}
