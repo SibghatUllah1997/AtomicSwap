@@ -28,7 +28,7 @@ To get started with Interware, follow these steps:
 1. Clone the code:
 
    ```bash
-   git clone https://github.com/your-username/interware.git
+   git clone https://github.com/SibghatUllah1997/AtomicSwap.git
    ```
 
 2. Navigate to the project directory:
